@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    
+    <title>Bootstrap 5 - Aula 02</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <h2>Sistema Grid</h2>
+    <p>O bootstrap trabalha com um sistema de grids que vai de zero até doze colunas e nós controlamos a disposição dos elementos através delas.</p>
+    <p>Por exemplo, um menu costuma ocupar toda a lateralidade do site, então um nenu usaria as doze colunas do grid.</p>
+    <p><span>Em um site de notícias, usariamos metade dessas colunas para um título</span> <span>e a outra metade para uma imagem</span> </p>
+    <br>
+
+    <h2>Responsividade - Breakpoints no Bootstrap</h2>
+    <p>X-Small; sem infixo; resolução <576px.</p>
+    <p>Small; sm; resolução >=576px.</p>
+    <p>Medium; md; resolução >=768px.</p>
+    <p>Large; md; resolução >=992px.</p>
+    <p>Extra Large; lg; resolução >=1200px.</p>
+    <p>Extra extra Large; xxl; resolução >=1400px.</p>
+
+    <p>Ps.: essas resoluções são na largura.</p>
+
+    <h2>Container</h2>
+    <p>Tudo que está na página deve estar dentro de containers, que servem como uma estrutura para definir o tamanho ou o espaço máximo que vamos ocupar na página.</p>
+    <div class="container">
+        <h3>Conatiner Padrão - default</h3>
+        <p>Quando não há sufixo ou infixo (sm, md, etc), se considera que ele será aplicado desde o mais pequeno (X-small). É a classe container aplicada sem nada e que geralmente é usada nas páginas.</p>
+        <p>O próprio container já tem vários comportamentos predefinidos para MediaQueries</p>
+    </div>
+    <div class="container-md">
+        <h3>Container com Breakpoints</h3>
+        <p>São os containers com os infixos de breakpoints do módulo anterior. Se escrevem com a palavra container, hífen e logo o infixo escolhido.</p>
+        <p>Ao adotar os breakpoints. Alguns elementos ficam com resolução de 100% (bo breakpoint para baixo) e outros  para ficarem com a resolução fixa (do breakpoint para cima).</p>
+    </div>
+    <div class="container-fluid">
+        <h3>Container fluid</h3>
+        <p>Adota sempre 100% da largura da tela, não importa a resolução.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quaerat harum, iste perferendis rem nulla odio quidem corrupti doloribus, ullam quasi. Commodi assumenda, esse dolore ipsam hic doloremque exercitationem nulla!
+        Asperiores nemo corrupti iure repellendus, velit iste ad dolor tempore ab magnam saepe, ipsam amet eaque? Voluptate consequatur facilis cumque animi exercitationem? Veritatis sit esse nihil qui, cumque animi obcaecati?</p>
+    </div>
+
+    <div class="container">
+        <h2>Como usar o sistema de grid</h2>
+        <p>
+            Depois do container, começamos a organizar o conteúdo no sistema de colunas.
+        </p>
+        <p><strong>Aqui vemos as colunas adaptando-se dentro de uma div com classe row. As classes coll não receberam números e dividem entre si, automaticamente, o espaço.</strong></p>
+        <div class="row">
+            <div class="col">
+                <strong>Aqui temos uma coluna (class col) sem número dentro de row.</strong>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem animi facere nostrum praesentium non voluptatibus aut ad, ratione laborum eum eveniet optio numquam expedita corporis eos vitae officiis vel.
+            </div>
+            <div class="col">
+                <strong>Aqui temos uma coluna (class col) sem número dentro de row.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et beatae reiciendis soluta, dolor natus sequi eum quisquam! Repellendus hic, fuga odio consequuntur saepe tempora veritatis provident placeat, fugit, accusamus facere?
+            </div>
+            <div class="col">
+                <strong>Aqui temos uma coluna (class col) sem número dentro de row.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, nulla veniam, dolor harum consectetur vitae ipsam maiores delectus natus porro architecto officiis earum quos incidunt qui, perferendis eaque nostrum. Quibusdam!
+            </div>
+            <div class="col">
+                <strong>se eu não defino um número de colunas que ocupar, as colunas vão se ajustando automaticamente. Até alcançar 12.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, porro veniam quibusdam dolore eaque amet culpa adipisci nam consectetur quia reiciendis eum illo minima veritatis velit quis assumenda dolores est.
+            </div>
+        </div>
+        <br>
+        <br>
+        <p><strong>Nesse caso, definimos um número de colunas que cada div deve ocupar, e assim organizamos o conteúdo de acordo com nossa necessidade.</strong></p>
+        <div class="row">
+            <div class="col-3">
+                Aqui definimos que a coluna deve ocupar 3 partes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo ea corrupti eius! Sunt eligendi nulla sequi quos? Veniam voluptas quam blanditiis facilis sunt voluptatem earum molestias at quidem suscipit?
+            </div>
+            <div class="col-9">
+                Já nessa daqui, 9 partes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quas. Fugit, eaque quaerat, ea suscipit repellat error quas laudantium excepturi voluptas alias nulla nihil eos dignissimos! Beatae sunt soluta sapiente.
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="col">
+            Esta coluna (class col) sem número está <strong>fora do row e não recebe os estilos determinados para as anterires.<strong>.
+        </div>
+        <br>
+        <br>
+        <p><strong>Já aqui definimos o número de colunas apenas para a div do centro e isso fez com que as div externas assumissem o resto do espaço igualmente.</strong></p>
+        <br>
+        <div class="row">
+            <div class="col">
+                Aqui definimos a coluna sem número. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo ea corrupti eius! Sunt eligendi nulla sequi quos? Veniam voluptas quam blanditiis facilis sunt voluptatem earum molestias at quidem suscipit?               
+            </div>
+            <div class="col-3">
+                Já nessa daqui, col-3, apenas para apreciação. É importante lembrar que no responsivo ele sempre manterá esse tamanho de colunas, não se ajustará. 
+            </div>
+            <div class="col">
+                Aqui definimos a coluna sem número. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo ea corrupti eius! Sunt eligendi nulla sequi quos? Veniam voluptas quam blanditiis facilis sunt voluptatem earum molestias at quidem suscipit?
+            </div>
+            <br>
+            <br>
+        </div>
+        
+        <p><strong>Neste caso, determinamos que um layout receba col-5 e col 7 respectivamente. Porém, ao acionar os breakpoints (col-md-5 e col-md-7), quando chegarmos a resolução imediatamente menor que md cada uma das colunas receberá 12, ficando uma acima da outra para melhorar a visualização.</strong></p>
+        <br>
+        <div class="row">
+            <div class="col-md-5">
+               imagem bem linda de notícia.             
+            </div>
+            <div class="col-md-7">
+                texto explicativo de notícia. Nesse caso, posso colocar mais um breakpoint para modificar como se vê em maiores resoluções.  Por exemplo, class="col-md-7 col-md-5". Assim, quando estiver em telas grandes, o texto perde tamanho e a imagem ganha. 
+            </div>
+        </div>
+            <br>
+            <br>
+    
+    </div>
+
+
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
