@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(209, 192, 236);
+}
+
+.row{
+    margin-top: 50px;
+    height: 400px;
+    background-color: rosybrown;
+}
+.row [class*=col] {
+    background-color: rgb(141, 103, 197);
+    color: white;
+    padding: 10px;
+    border: 2px solid rosybrown;
+    border-radius: 10px;
+    
+}

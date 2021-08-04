@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles-alinhamento.css">
+    <title>Aninhamentos de colunas</title>
+</head>
+<body>
+    <h2>Align Items</h2>
+    <div class="container">
+        <p>row com altura fixa -> ao usar o alinhamento junta da classe row, alinhamos as col dentro do row. Mantém-se o tamanho da row, porém as colunas se ajustam ao texto e são posicionadas de acordo com nossa determinação.</p>
+        <div class="row">
+            <div class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sunt optio ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+            </div>
+        </div>
+        <br> <br>
+        <div class="container">
+            <p>Assim se visualiza com align-items-center quando colocado junto de row.</p>
+            <div class="row align-items-center">
+                <div class="col">
+                     inventore quis iusto eaque ea culpa.
+                </div>
+                <div class="col">
+                    Lorem ipsum  adipisicing elit. Eaque, sunt optio ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                </div>
+                <div class="col">
+                    ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                </div>
+            </div>
+            <br><br>
+            <p>baseline.</p>
+            <div class="row align-items-baseline">
+                <div class="col">
+                     inventore quis iusto eaque ea culpa.
+                </div>
+                <div class="col">
+                    Lorem ipsum  adipisicing elit. Eaque, sunt optio ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                </div>
+                <div class="col">
+                    ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                </div>
+            </div>
+            <br><br>
+            <p>End</p>
+            <div class="row align-items-end">
+                <div class="col">
+                     inventore quis iusto eaque ea culpa.
+                </div>
+                <div class="col">
+                    Lorem ipsum  adipisicing elit. Eaque, sunt optio ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                </div>
+                <div class="col">
+                    ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                </div>
+            </div> 
+                <br><br>
+               <p>Start</p>
+                <div class="row align-items-start">
+                    <div class="col">
+                         inventore quis iusto eaque ea culpa.
+                    </div>
+                    <div class="col">
+                        Lorem ipsum  adipisicing elit. Eaque, sunt optio ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                    </div>
+                    <div class="col">
+                        ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                    </div>
+                </div>    
+                    <br><br>
+               <p>Auto</p>
+                <div class="row align-items-auto">
+                    <div class="col">
+                         inventore quis iusto eaque ea culpa.
+                    </div>
+                    <div class="col">
+                        Lorem ipsum  adipisicing elit. Eaque, sunt optio ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                    </div>
+                    <div class="col">
+                        ex incidunt, quas perferendis minima aspernatur voluptatibus nobis, natus ab? Quasi velit excepturi inventore quis iusto eaque ea culpa.
+                    </div>
+                </div>    
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
