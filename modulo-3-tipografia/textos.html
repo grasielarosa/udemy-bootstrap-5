@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição de textos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 50px;
+            background-color: tan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Títulos com Bootstrap</h2>
+                <br><br>
+                <h1>Titulo 01</h1>
+                <h2>Titulo 02</h2>
+                <h3>Titulo 03</h3>
+                <h4>Titulo 04</h4>
+                <h5>Titulo 05</h5>
+                <h6>Titulo 06</h6>
+            </div>
+        </div>
+        <br>
+        <p>----> Podemos replicar a estética dos títulos em parágrafos utilizando classes.</p>
+        <p class="h1">Isso é um parágrafo com classe h1</p>
+        <p class="h2">Isso é um parágrafo com classe h2</p>
+        <p class="h3">Isso é um parágrafo com classe h3</p>
+        <p class="h4">Isso é um parágrafo com classe h4</p>
+        <p class="h5">Isso é um parágrafo com classe h5</p>
+        <p class="h6">Isso é um parágrafo com classe h6</p>
+        <br>
+        <br>
+        <p>----> Podemos também usar displays para modifciar o estilo dos títulos, dando ainda mais detaque. Aumenta a fonte e tira o peso</p>
+        <h1 class="display-1">Título 01</h1>
+        <h2 class="display-2">Título 02</h1>
+        <h3 class="display-3">Título 03</h1>
+        <h4 class="display-4">Título 04</h1>
+        <h5 class="display-5">Título 05</h1>
+        <h6 class="display-6">Título 06</h1>
+
+
+    </div>
+    <br> <br> <br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Elementos embutidos</h2>
+                <p>Este é um parágrafo em HTML</p>
+                <br>
+                <p class="lead">Este é um parágrafo com class lead e serve apenas para modificar o estilo de texto</p>
+                <br>
+                <p class="">Este é um parágrafo em  HTML com a <mark> a tag mark, que além de modificar visualmente dá destaque semântico no html</mark></p>
+                <br>
+                <p>Este é um parágrafo em HTML <del>com a tag del</del> e esse aqui <s>com a tag s</s>. Visualmente estas tags não tem diferença, mas semânticamente, o buscador entende que esse elemento foi deletado e pode ser ignorado (como se nunca estive existido. Já a tag s é interpretada como um texto que existiu, já foi válido, mas não é mais. A tag s tem mais peso que a del.</p>
+                <p><insert>Este é um parágrafo com a tag insert, que diz que esse trecho foi inserido na página. </insert></p>
+                <p> <u>Com a tag u, somente temos o sublinhado estético sem tanto peso semântico.</u></p>
+                <p> <small>Esse é um texto com a tag small, que diminui a importância do texto</small></p>
+                <br>
+                <p><strong>esse é um texto com strong, que além do negrito visual, ele também tem um peso maior na informação, melhor colocar em palavras específicas</strong></p>
+                <br>
+                <p><em>Esse é um parágrafo com a tag em, que dá o itélico, mas semânticamente também dá destaque.</em></p>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Citações com Bootstrap</h2>
+                <br>
+                <p>texto principal com tag e class blockquote, autor com tag figure e class blockquote-footer. </p>
+                <blockquote class="blockquote">
+                        "A imaginação é mais importante que o conhecimento."
+                </blockquote>
+                <figure class="blockquote-footer">
+                    Albert Einstein
+                </figure>
+
+                <p>também podemos usar a tag cite com title para reforçar a carteirada do autor, que aparecerá em itálico logo ao lado. </p>
+
+                <figure class="blockquote-footer">
+                    Albert Einstein <cite title="Físico">Físico</cite>
+                </figure>
+
+                <p>----> Aqui temos as classes para determinar os <strong>alinhamentos</strong>. </p>
+                <figure class="text-start">
+                    <blockquote class="blockquote">
+                        "A imaginação é mais importante que o conhecimento."
+                    </blockquote>
+                    <figure class="blockquote-footer">
+                        Albert Einstein
+                    </figure>
+                </figure>
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        "A imaginação é mais importante que o conhecimento."
+                    </blockquote>
+                    <figure class="blockquote-footer">
+                        Albert Einstein
+                    </figure>
+                </figure>
+                <figure class="text-end">
+                    <blockquote class="blockquote">
+                        "A imaginação é mais importante que o conhecimento."
+                    </blockquote>
+                    <figure class="blockquote-footer">
+                        Albert Einstein
+                    </figure>
+                </figure>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
