@@ -1,0 +1,24 @@
+.full-height {
+    min-height: 100vh;
+}
+
+.img-cover {
+    background-image: url('/modulo-5-projeto-tela-login/assets/img/240207-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.icons>.btn {
+    width: 45px;
+    height: 45px;
+    color: white;
+    padding: 0px;
+    line-height: 1rem;
+}
