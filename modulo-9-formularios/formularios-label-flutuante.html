@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labels flutuantes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-6"></div>
+        <h2>label flutuantes</h2>
+        <div class="form-floating">
+          <input
+            id="nome"
+            type="text"
+            class="form-control"
+            placeholder="seu nome aqui"
+          />
+          <label for="id">nome</label>
+        </div>
+
+        <p class="mt-5">input inválido</p>
+        <div class="form-floating">
+          <input
+            id="nome"
+            type="text"
+            class="form-control is-invalid"
+            placeholder="seu nome aqui"
+          />
+          <label class="ps-3" for="id">nome</label>
+        </div>
+        <p class="mt-5">input válido</p>
+        <div class="form-floating">
+          <input
+            id="nome"
+            type="text"
+            class="form-control is-valid"
+            placeholder="seu nome aqui"
+          />
+          <label class="ps-3" for="id">nome</label>
+        </div>
+
+        <div class="form-floating mt-5">
+          <textarea
+            class="form-control"
+            placeholder="mensagem"
+            style="height: 200px"
+          ></textarea>
+          <label class="ps-3 form-label" for="">mensagem</label>
+        </div>
+        <div class="form-floating mt-5">
+          <select class="form-select">
+            <option>umdoistres</option>
+            <option>umdoistres</option>
+            <option>umdoistres</option>
+          </select>
+          <label class="form-label ps-5">escolha</label>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col mt-3">
+            <div class="form-floating">
+              <select class="form-select">
+                <option>fiat</option>
+                <option>VW</option>
+              </select>
+              <label class=" ps-3">marca</label>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="form-floating">
+              <select class="form-select">
+                <option>argo</option>
+                <option>siena</option>
+              </select>
+              <label class=" ps-3">modelo</label>
+            </div>
+          </div>
+      </div>
+    </div>
+    <br />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
