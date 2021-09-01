@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas Intro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col">
+          <h3 class="lead">Primeira Tabela Bootstrap</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Descrição</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Data</th>
+                <th scope="col">Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="lead mt-5">Segunda Tabela Bootstrap</h3>
+          <p>
+            usando o esquema de cores do bootstrap - coloca um tom mais claro
+            como fundo
+          </p>
+          <table class="table table-primary">
+            <thead class="table-success">
+              <tr>
+                <th scope="col">Descrição</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Data</th>
+                <th scope="col">Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td class="table-warning">comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="lead mt-5">Terceira Tabela Bootstrap</h3>
+          <p>usando striped para alterar a cor entre linhas</p>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Descrição</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Data</th>
+                <th scope="col">Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="lead mt-5">Quarta Tabela Bootstrap</h3>
+          <p>usando striped com fundo de cor</p>
+          <table class="table table-striped table-danger">
+            <thead>
+              <tr>
+                <th scope="col">Descrição</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Data</th>
+                <th scope="col">Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="lead mt-5">Quinta Tabela Bootstrap</h3>
+          <p>com table-hover para escurecer ao passar por cima com o mouse.</p>
+          <p>
+            e no final com table-active, que deixa marcado uma linha de
+            importância para o conteúdo
+          </p>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Descrição</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Data</th>
+                <th scope="col">Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+              <tr class="table-active">
+                <th scope="row">comida</th>
+                <td>299</td>
+                <td>comida</td>
+                <td>comida</td>
+                <td>
+                  <button class="btn btn-outline-dark">apagar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
